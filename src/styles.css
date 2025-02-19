@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f9fc;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.nav-container {
+    padding: 18px 300px;
+    background-color: #ffffff;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 12px;
+}
+
+.nav-bar ul{
+    display: flex;
+    padding: 0;
+}
+
+.nav-bar li {
+    padding: 0 10px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
