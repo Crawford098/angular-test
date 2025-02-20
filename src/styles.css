@@ -2,6 +2,7 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    color: #657AA5
 }
 
 body {
@@ -18,24 +19,16 @@ body {
     justify-content: space-between;
 }
 
-.nav-container {
-    padding: 18px 300px;
-    background-color: #ffffff;
+.justify-center {
+    justify-content: center;
 }
 
-.nav-bar {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 0 12px;
+.justify-start {
+    justify-content: start;
 }
 
-.nav-bar ul{
-    display: flex;
-    padding: 0;
-}
-
-.nav-bar li {
-    padding: 0 10px;
+.align-center {
+    align-items: center;
 }
 
 ul {
@@ -43,3 +36,11 @@ ul {
     list-style: none;
 }
 
+
+h2 {
+    font-weight: 500;
+}
+
+.app-fit {
+    padding: 0 300px;
+}

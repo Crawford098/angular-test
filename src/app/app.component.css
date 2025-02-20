@@ -1,1 +1,19 @@
 @import url(../styles.css);
+
+div.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9d9;
+    border-right-color: #002068;
+    border-right-width: 4px;
+    border-radius: 15px;
+}
+
+.pages {
+    padding: 0 10px;
+    margin: 10px;
+}

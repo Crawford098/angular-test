@@ -1,0 +1,99 @@
+@import url(../../../styles.css);
+
+.nav-container {
+    padding: 10px 300px;
+    background-color: #ffffff;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 12px;
+}
+
+.nav-bar ul{
+    display: flex;
+    padding: 0;
+}
+
+.nav-bar li {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.nav-bar li:hover{
+    color: #50628A;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    border: 100%;
+}
+
+.profile span{
+    padding: 0 10px;
+}
+
+.profile .user-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border:2px solid #50628A;
+}
+
+.profile .user-logo img {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.img-logo {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 379px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+  }
+
+  @media (min-width: 280px) and (max-width: 399px) {
+    .nav-container {
+        padding: 0 60px;
+    }
+  }
+  
+
+@media (min-width: 400px) and (max-width: 576px) {
+    .nav-container {
+        padding: 0 60px;
+    }
+  }
+  
+  /* Dispositivos medianos (tablets) */
+  @media (min-width: 577px) and (max-width: 750px) {
+    .nav-container {
+        padding: 0 100px;
+    }
+  }
+
+  @media (min-width: 751px) and (max-width: 992px) {
+    .nav-container {
+        padding: 0 200px;
+    }
+  }
+  
+  /* Dispositivos grandes (escritorio) */
+  @media (min-width: 993px) {
+    .nav-container {
+        padding: 0 300px;
+    }
+  }

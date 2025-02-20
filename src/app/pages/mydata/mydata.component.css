@@ -1,0 +1,94 @@
+@import url(../../../styles.css);
+
+.coverage-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9d9;
+    border-right-color: #002068;
+    border-right-width: 4px;
+    border-radius: 15px;
+}
+
+.discover {
+    display: flex;
+}
+
+div.discover-card {
+    position: relative;
+    width: 200px;
+    min-height: 100px;
+    padding: 0 15px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow:  0 3px 6px #d9d9d9d9;
+}
+
+.discover-card p{
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+span.point {
+    background-color: green;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+}
+
+span.point-red {
+    background-color: red;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+}
+
+.show-more {
+    position: absolute;
+    bottom: 1px;
+    vertical-align: bottom;
+    padding: 10px 0;
+}
+
+@media (max-width: 379px) {
+    .app-fit {
+        padding: 0 10px;
+    }
+  }
+
+  @media (min-width: 280px) and (max-width: 399px) {
+    .app-fit {
+        padding: 0 10px;
+    }
+  }
+  
+
+@media (min-width: 400px) and (max-width: 576px) {
+    .app-fit {
+        padding: 0 60px;
+    }
+  }
+  
+  /* Dispositivos medianos (tablets) */
+  @media (min-width: 577px) and (max-width: 750px) {
+    .app-fit {
+        padding: 0 100px;
+    }
+  }
+
+  @media (min-width: 751px) and (max-width: 992px) {
+    .app-fit {
+        padding: 0 200px;
+    }
+  }
+  
+  /* Dispositivos grandes (escritorio) */
+  @media (min-width: 993px) {
+    .app-fit {
+        padding: 0 300px;
+    }
+  }
