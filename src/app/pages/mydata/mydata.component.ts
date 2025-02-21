@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { Request } from "../../services/requests/Request";
 import { CommonModule } from "@angular/common";
 import { catchError } from "rxjs";
+import { of } from 'rxjs';
 import { ApiResponse } from "./interface/api-response.interface";
 
 @Component({
@@ -17,32 +18,55 @@ export class MyData {
     success: boolean = false;
     message: string = "";
     returnData: any = {};
+    disabled: string = '';
 
     constructor(private request: Request) {}
 
-    saveProduct() {
+    saveProduct(productName : string, developerName: string) {
 
-        const data = {
-            "productName": "Aplicación Demo",
-            "developerName": "Juan Pérez"
-          }
-
-            this.request.post<ApiResponse>('http://localhost:3000/api/product', data).subscribe(res => {
+        if(this.disabled !== "disabled") {
+            const data = {
+                "productName": productName,
+                "developerName": developerName
+            }
+    
+            this.request.post<ApiResponse>('http://localhost:3000/api/product', data).pipe(
+                catchError(error => {
+                    this.alert(error.error);
+                    return of(null)
+                })
+            ).subscribe(res => {
                 console.log(res);
 
-                if(res.result === 1) {
+                if(res && res.result === 1) {
                     this.alert(res);
                 }
             })
+        }   
     }
 
     alert(result: ApiResponse) {
-        this.success = true;
-        this.message = result.message;
-        this.returnData = result.data;
 
+        console.log(result);
+        
+        if (result.result === 1) {
+            this.returnData = result.data;
+            this.message = result.message;
+        } else {
+            this.message = result.message;
+            this.activeDisabled();
+        }
+
+        this.success = true;
         setTimeout(() => {
             this.success = false;
         }, 6000);
+    }
+
+    activeDisabled() {
+        this.disabled = "disabled"
+        setTimeout(() => {
+            this.disabled = ""
+       }, 6000);
     }
 }
