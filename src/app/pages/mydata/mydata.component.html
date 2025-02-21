@@ -1,15 +1,24 @@
 <div class="app-fit">
     <h2>Mis coberturas</h2>
 
-    <div class="coverage-card">
+    <div *ngIf="success" class="result-message">
+      <ul>
+        <li> <p>Mensaje: {{message}}</p></li>
+        <li> <p>Product Name: {{returnData.productName}}</p></li>
+        <li> <p>Developer Name: {{returnData.developerName}}</p></li>
+      </ul>
+       
+    </div>
+
+    <div class="coverage-card" (click)="saveProduct()">
       <p>Para tu mejor amigo</p> <span class="point"></span>
     </div>
 
-    <div class="coverage-card">
+    <div class="coverage-card" (click)="saveProduct()">
       <p>Por si te enfermas</p> <span class="point-red"></span>
     </div>
 
-    <div class="coverage-card">
+    <div class="coverage-card" (click)="saveProduct()">
       <p>Para tu bici</p> <span class="point"></span>
     </div>
 

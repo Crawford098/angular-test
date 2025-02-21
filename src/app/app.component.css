@@ -17,3 +17,9 @@ div.card {
     padding: 0 10px;
     margin: 10px;
 }
+
+footer-menu {
+    width: 100%;
+    position: fixed;
+    bottom: 1px;
+}

@@ -15,6 +15,16 @@ body {
     flex-direction: row;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -43,4 +53,34 @@ h2 {
 
 .app-fit {
     padding: 0 300px;
+}
+
+
+/*****Aligments******/
+
+.px-1 {
+    padding: 0 5px;
+}
+
+.px-2 {
+    padding: 0 10px;
+}
+
+.px-3 {
+    padding: 0 15px;
+}
+
+.px-4 {
+    padding: 0 20px;
+}
+
+.pt-3 {
+    padding-top: 15px;
+}
+
+
+/*Portions*/
+
+.full-width {
+    width: 100%;
 }

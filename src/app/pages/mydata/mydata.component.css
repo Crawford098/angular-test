@@ -11,6 +11,7 @@
     border-right-color: #002068;
     border-right-width: 4px;
     border-radius: 15px;
+    cursor:pointer;
 }
 
 .discover {
@@ -52,6 +53,13 @@ span.point-red {
     bottom: 1px;
     vertical-align: bottom;
     padding: 10px 0;
+}
+
+.result-message {
+    background-color: rgb(199, 248, 232);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 @media (max-width: 379px) {

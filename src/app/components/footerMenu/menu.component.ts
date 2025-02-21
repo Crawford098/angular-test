@@ -1,19 +1,17 @@
 import { Component } from "@angular/core";
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { CommonModule } from "@angular/common";
-import { MobileNavbar } from "./mobileNavbar/mobile.component";
-import { TabletNavBar } from "./tabletNavbar/tablet.component";
-import { DesktopNavBar } from "./desktopNavbar/desktop.component";
+import { IconComponent } from "../icons/icon.component";
 
 @Component({
-    selector: 'navbar',
+    selector: 'footer-menu',
     standalone: true,
-    styleUrl: './navbar.component.css',
-    templateUrl: './navbar.component.html',
-    imports: [CommonModule, MobileNavbar, TabletNavBar, DesktopNavBar]
+    styleUrl: './menu.component.css',
+    templateUrl: './menu.component.html',
+    imports: [IconComponent]
 })
 
-export class Navbar {
+export class Menu {
 
     deviceType: string = 'desktop';
     
