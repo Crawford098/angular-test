@@ -2,5 +2,5 @@
 
 <my-data></my-data>
 
-<footer-menu></footer-menu>
+<footer-menu *ngIf="deviceType !== 'desktop'"></footer-menu>
 <router-outlet />

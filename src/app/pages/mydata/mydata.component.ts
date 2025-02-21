@@ -36,7 +36,6 @@ export class MyData {
             })
     }
 
-
     alert(result: ApiResponse) {
         this.success = true;
         this.message = result.message;
@@ -44,6 +43,6 @@ export class MyData {
 
         setTimeout(() => {
             this.success = false;
-        }, 4000);
+        }, 6000);
     }
 }
